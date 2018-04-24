@@ -26,3 +26,14 @@ test.addEventListener("mouseout", zmienKolor2);
 test.addEventListener("mouseover", powiekszCzcionke);
 test.addEventListener("mouseout", zmiejszCzcione);
 
+function dragstart(event)
+{
+    event.dataTransfer.setData("cokolwiek", event.target.id);
+    var a = event.dataTransfer.getData("cokolwiek");
+    alert(a);
+}
+
+$(document).ready(function()
+{
+
+});
